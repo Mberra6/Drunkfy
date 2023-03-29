@@ -14,7 +14,7 @@ Main features:
 8. Book a ride
 9. Give optional feedback to driver
 
-1.
+1
 ![Screenshot 2023-03-29 at 16 45 05](https://user-images.githubusercontent.com/53789337/228594549-d693841b-8e69-4aab-8611-769156c5d423.png)
 
 

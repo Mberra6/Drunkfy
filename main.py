@@ -8,13 +8,13 @@ import random
 
 
 app = Flask(__name__)
-app.secret_key = '031120'
+app.secret_key = ''
 
 #Connect to MySQL Database
 #MySQL configurations
 app.config['MYSQL_HOST'] = 'localhost'
 app.config['MYSQL_USER'] = 'root'
-app.config['MYSQL_PASSWORD'] = '031120Krysto'
+app.config['MYSQL_PASSWORD'] = ''
 app.config['MYSQL_DB'] = 'main'
 
 # Intialize MySQL

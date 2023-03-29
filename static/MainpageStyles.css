@@ -1,0 +1,141 @@
+
+/* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 62%;
+        position: relative;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+      .msg {
+        position:absolute;
+        text-align: center;
+        width: 100%;
+        bottom: 32%;
+        font-size: 26px;
+        font-family: "Times New Roman";
+      }
+      .InitialBox {
+        position:relative;
+        bottom: -80px;
+        right: -870px;
+      }
+      #startBox {
+        width: 200px;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+        background-color: white;
+        padding: 12px 20px 12px 40px;
+      }
+
+      i {
+        position: absolute;
+        top:17px;
+        left:8px;
+      }
+
+      hr {
+        display: block;
+        margin-top: 0.6em;
+        margin-bottom: 5em;
+        margin-left: auto;
+        margin-right: auto;
+        border-style: inset;
+        border-width: 0.5px;
+        border-color: rgb(0, 162, 232);
+      }
+
+      .sidemenu {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+      }
+
+      .sidemenu a {
+        padding: 16px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+      }
+
+      .sidemenu a1 {
+        position: absolute;
+        top: 10px;
+        padding: 12px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: white;
+        display: block;
+        transition: 0.3s;
+      }
+
+      .sidemenu a2 {
+        padding: 8px 8px 8px 32px;
+        margin-top: -40px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+      }
+
+      .sidemenu a:hover {
+        color: #f1f1f1;
+      }
+
+      .sidemenu a2:hover {
+        color: #f1f1f1;
+        cursor: pointer;
+      }
+
+      .sidemenu .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+
+      .openbtn {
+        position: absolute;
+        top: 55px;
+        font-size: 20px;
+        cursor: pointer;
+        background: white;
+        padding:0px;
+        border-radius: 50%;
+        color: rgb(0, 162, 232);
+        padding: 6px 11px;
+        border: none;
+      }
+
+      .openbtn:hover {
+        background-color: grey;
+      }
+
+      #main {
+        transition: margin-left .5s;
+        padding: 16px;
+      }
+
+      /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+      @media screen and (max-height: 450px) {
+        .sidemenu {padding-top: 15px;}
+        .sidemenu a {font-size: 18px;}
+      }

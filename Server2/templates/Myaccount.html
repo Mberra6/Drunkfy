@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Myaccount</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a023ef4a03.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='MyaccountStyles.css')}}">
+  </head>
+  <body>
+      <a class="closebtn" onclick="location.href='http://127.0.0.1:5000/Drunkfy/Home'"><strong>×</strong></a>
+      <h1>Edit Account</h1>
+    <i class="material-icons user">person</i>
+      <a class="logout" onclick="location.href='http://127.0.0.1:5000/Drunkfy/Home/Myaccount/logout'" href="#">Log out</a>
+    <form action="{{ url_for('savechanges') }}" method="post">
+      <div class="msgnegative">{{ negative }}</div>
+      <div class="msgpositive">{{ positive }}</div>
+      <label for="FirstName">First name:</label><br>
+      <i class='far fa-edit icons'></i>
+      <input type="text" id="FirstName" name="FirstName" value="{{ fn }}" maxlength="30" size= "50"><br><br>
+      <label for="LastName">Last name:</label><br>
+      <i class='far fa-edit icons'></i>
+      <input type="text" id="LastName" name="LastName" value="{{ ln }}" maxlength="30" size= "50"><br><br>
+      <label for="email">Email address</label><br>
+      <i class='far fa-edit icons'></i>
+      <input type="text" id="email" name="email" value="{{ eml }}" maxlength="50" size="50"><br><br>
+      <label for="password">Password</label><br>
+      <div class="changePassword"><a onclick="location.href='http://127.0.0.1:5000/Drunkfy/Home/Myaccount/Changepassword'"><span class="linkcursor">Change password?</span></a></div>
+      <input type="password" id="password" name="password" value="1111" maxlength="4" size= "50" readonly><br><br><br>
+      <input type="submit" value="Save changes">
+    </form>
+  </body>
+  <script>
+  </script>
+</html>

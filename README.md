@@ -1,5 +1,5 @@
 # Drunkfy
-Final project for A-level Computer Science - A web application for booking car rides
+Final project for A-level Computer Science - Web application for booking car rides
 
 Web application built using Python Flask, MySQL, HTML5, CSS3 and JavaScript.
 
